@@ -1,8 +1,10 @@
 version: '3'
 services:
   myapp:
-    image: openjdk:11-jre-slim
+    image: openjdk:11
+    container_name: myapp
     volumes:
-      - /Users/purvashapadhy/DevOps-753/my-app/target:/app
-    working_dir: /app
-    command: java -jar my-app-1.0-SNAPSHOT.jar
+      - ./target/my-app-1.0-SNAPSHOT.jar:/my-app.jar
+    command: ["java", "-jar", "/my-app.jar"]
+    ports:
+      - "8080:8080"
