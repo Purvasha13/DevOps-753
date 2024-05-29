@@ -1,23 +1,4 @@
-const cardList = [
-    {
-      title: "Retriever",
-      image: "image/dog-1.jpeg",
-      link: "About Me",
-      description: "I am a Golden retriever puppy !!"
-    },
-    {
-      title: "Pug",
-      image: "image/dog-2.jpeg",
-      link: "About Me",
-      description: "I am a Pug!!"
-    },
-    { 
-     title: "German Shephard",
-     image: "image/dog-3.jpeg",
-     link: "About Me",
-     description: "I am a german shephard"
-    }
- ];
+const cardList = [];
 
 const clickMe = () => {
     $('#addCardForm').modal('open');
